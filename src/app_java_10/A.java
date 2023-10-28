@@ -12,6 +12,7 @@ public class A {
 		Student s3 = new Student("Adam",77,101);
 		Student s4 = new Student("Arin",76,104);
 		Student s5 = new Student("Smith",69,105);
+		Student s6 = new Student("Krish",90,106);
 		
 		ArrayList<Student> students = new ArrayList<Student>();
 		students.add(s1);
@@ -19,6 +20,7 @@ public class A {
 		students.add(s3);
 		students.add(s4);
 		students.add(s5);
+		students.add(s6);
 	
 	
 	List<Student> newList  = students.stream().filter(s->s.getMarks()>75).collect(Collectors.toList());
